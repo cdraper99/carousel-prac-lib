@@ -19,14 +19,14 @@ export class NguCarouselComponent implements OnInit {
     this.carouselTileItems = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 
     this.carouselTile = {
-      grid: { xs: 2, sm: 3, md: 3, lg: 5, all: 0 },
+      grid: { xs: 2, sm: 3, md: 5, lg: 5, all: 0 },
       slide: 1,
       speed: 400,
       loop: true,
       interval: 2000,
-      animation: 'lazy',
+      // animation: 'lazy',
       point: {
-        visible: true
+        visible: false
       },
       load: 2,
       touch: true,
@@ -46,14 +46,19 @@ export class NguCarouselComponent implements OnInit {
     this.carousel.moveToSlide(this.carouselToken, 2, false);
   }
 
+  log(tile) {
+    console.log(tile);
+    this.carousel.moveToSlide(this.carouselToken, tile);
+  }
+
   public carouselTileLoad(evt: any) {
 
-    const len = this.carouselTileItems.length;
-    if (len <= 30) {
-      for (let i = len; i < len + 10; i++) {
-        this.carouselTileItems.push(i);
-      }
-    }
+    // const len = this.carouselTileItems.length;
+    // if (len <= 30) {
+    //   for (let i = len; i < len + 10; i++) {
+    //     this.carouselTileItems.push(i);
+    //   }
+    // }
 
   }
 
