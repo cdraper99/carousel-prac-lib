@@ -11,3 +11,6 @@
     background:#ECECEC;
     padding: 0 5px;
 }
+#left, #right { 
+    margin: 30px;
+}
