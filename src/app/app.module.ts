@@ -3,14 +3,21 @@ import { NgModule } from '@angular/core';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 
 import { AppComponent } from './app.component';
+import { CarouselamosComponent } from './carousel-amos/carouselamos/carouselamos.component';
+import { NguCarouselComponent } from './ngu-carousel/ngu-carousel.component';
+import { NguCarouselModule } from '@ngu/carousel';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CarouselamosComponent,
+    NguCarouselComponent,
   ],
   imports: [
     BrowserModule,
-    Ng2CarouselamosModule
+    Ng2CarouselamosModule,
+    NguCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

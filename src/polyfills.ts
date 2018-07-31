@@ -73,6 +73,8 @@ import 'core-js/es7/reflect';
  */
 import 'zone.js/dist/zone';  // Included with Angular CLI.
 
+// hammer for touch screen of ngu-carousel
+import 'hammerjs';
 
 
 /***************************************************************************************************
