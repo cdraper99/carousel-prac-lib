@@ -7,6 +7,7 @@ import { CarouselamosComponent } from './carousel-amos/carouselamos/carouselamos
 import { NguCarouselComponent } from './ngu-carousel/ngu-carousel.component';
 import { NguCarouselModule } from '@ngu/carousel';
 import { BodCarouselComponent } from './bod-carousel/bod-carousel.component';
+import { MatButtonModule } from '../../node_modules/@angular/material/button';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { BodCarouselComponent } from './bod-carousel/bod-carousel.component';
   imports: [
     BrowserModule,
     Ng2CarouselamosModule,
-    NguCarouselModule
+    NguCarouselModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
