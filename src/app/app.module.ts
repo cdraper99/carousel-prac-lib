@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CarouselamosComponent } from './carousel-amos/carouselamos/carouselamos.component';
 import { NguCarouselComponent } from './ngu-carousel/ngu-carousel.component';
 import { NguCarouselModule } from '@ngu/carousel';
+import { BodCarouselComponent } from './bod-carousel/bod-carousel.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { NguCarouselModule } from '@ngu/carousel';
     AppComponent,
     CarouselamosComponent,
     NguCarouselComponent,
+    BodCarouselComponent,
   ],
   imports: [
     BrowserModule,

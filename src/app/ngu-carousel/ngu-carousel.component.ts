@@ -24,7 +24,7 @@ export class NguCarouselComponent implements OnInit {
       speed: 400,
       loop: true,
       interval: 2000,
-      // animation: 'lazy',
+      animation: 'lazy',
       point: {
         visible: false
       },
@@ -48,7 +48,7 @@ export class NguCarouselComponent implements OnInit {
 
   log(tile) {
     console.log(tile);
-    this.carousel.moveToSlide(this.carouselToken, tile);
+    this.carousel.moveToSlide(this.carouselToken, tile, true);
   }
 
   public carouselTileLoad(evt: any) {
